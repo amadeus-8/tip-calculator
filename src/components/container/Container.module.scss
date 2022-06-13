@@ -1,0 +1,17 @@
+@import 'src/styles/mixins';
+
+.wrapper {
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+
+    @include custom-min-width($sm) {
+        max-width: 540px;
+    }
+    @include custom-min-width($lg) {
+        max-width: 980px;
+    }
+}
