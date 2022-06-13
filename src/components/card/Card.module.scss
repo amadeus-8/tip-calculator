@@ -1,0 +1,17 @@
+@import 'src/styles/colors';
+
+.wrapper {
+    padding: 40px;
+    border-radius: 40px;
+    background: $strong-cyan;
+    width: 100%;
+}
+
+.white {
+    background: $white;
+}
+
+.cyan {
+    //border-radius: ;
+    background: $very-dark-cyan;
+}
