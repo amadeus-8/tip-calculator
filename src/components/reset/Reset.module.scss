@@ -1,0 +1,19 @@
+@import 'src/styles/colors';
+
+.wrapper {
+    text-transform: uppercase;
+    padding: 12px 0;
+    color: $very-dark-cyan;
+    background: $strong-cyan;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.4s ease;
+    margin-top: 30px;
+
+    &:hover {
+        background: $light-grayish-cyan;
+    }
+}
