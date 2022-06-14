@@ -15,7 +15,7 @@ export const Calculator = () => {
                 <img src={Logo} alt="logo" />
             </div>
             <Card shadow>
-                <Grid gap={50} autoflow="column" autocolumns="max-content">
+                <Grid gap={50} autoflow="column">
                     <CalculatorInput />
                     <Result />
                 </Grid>
