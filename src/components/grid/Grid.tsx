@@ -20,8 +20,8 @@ export const Grid: FC<Props> = ({
     autoflow = 'initial',
     autocolumns = '',
 }) => {
-    const gridTemplateRows = `repeat(${rows}, auto)`
-    const gridTemplateColumns = `repeat(${cols}, auto)`
+    const gridTemplateRows = `repeat(${rows}, minmax(0, 1fr))`
+    const gridTemplateColumns = `repeat(${cols}, minmax(0, 1fr))`
 
     return (
         <div

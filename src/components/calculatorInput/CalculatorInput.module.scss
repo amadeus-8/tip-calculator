@@ -2,6 +2,7 @@
 
 .wrapper {
     width: 100%;
+    padding: 0 35px 15px 15px;
 }
 
 .labelWrapper {
@@ -40,4 +41,21 @@
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.custom {
+    text-align: center;
+    font-weight: 700;
+    border-radius: 5px;
+    color: $very-dark-cyan;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-family: 'Space Mono', monospace;
+    background: $very-light-grayish-cyan;
+    border: 2px solid $very-light-grayish-cyan;
+
+    &:focus {
+        border: 2px solid $strong-cyan;
+    }
 }

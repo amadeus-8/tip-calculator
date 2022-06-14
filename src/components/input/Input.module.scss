@@ -1,0 +1,30 @@
+@import 'src/styles/colors';
+
+.wrapper {
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    font-weight: 700;
+    border-radius: 8px;
+    text-align: right;
+    color: $very-dark-cyan;
+    outline: none;
+    padding: 4px 20px 4px 30px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    background: $very-light-grayish-cyan;
+    border: 2px solid $very-light-grayish-cyan;
+
+    &:focus {
+        border: 2px solid $strong-cyan;
+    }
+}
+
+.icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
