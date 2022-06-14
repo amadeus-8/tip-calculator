@@ -6,8 +6,21 @@ import clsx from 'clsx'
 interface Props {
     children: ReactNode
     color?: 'white' | 'cyan'
+    shadow?: boolean
 }
 
-export const Card: FC<Props> = ({ children, color = 'white' }) => {
-    return <div className={clsx(styles.wrapper, styles[color])}>{children}</div>
+export const Card: FC<Props> = ({
+    children,
+    color = 'white',
+    shadow = false,
+}) => {
+    return (
+        <div
+            className={clsx(styles.wrapper, styles[color], {
+                [styles.shadow]: shadow,
+            })}
+        >
+            {children}
+        </div>
+    )
 }

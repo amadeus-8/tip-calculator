@@ -1,0 +1,21 @@
+@import 'src/styles/mixins';
+
+.wrapper {
+    display: grid;
+}
+
+.column {
+    grid-auto-flow: column;
+}
+
+.row {
+    grid-auto-flow: row;
+}
+
+.min-content {
+    grid-auto-columns: min-content;
+}
+
+.max-content {
+    grid-auto-columns: max-content;
+}

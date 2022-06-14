@@ -2,8 +2,11 @@ import React from 'react'
 
 import styles from './Calculator.module.scss'
 
-import { Card } from '../card/Card'
 import Logo from '../../assets/images/logo.svg'
+import { Card } from '../card/Card'
+import { Grid } from '../grid/Grid'
+import { CalculatorInput } from '../calculatorInput/CalculatorInput'
+import { Result } from '../result/Result'
 
 export const Calculator = () => {
     return (
@@ -11,7 +14,12 @@ export const Calculator = () => {
             <div className={styles.logo}>
                 <img src={Logo} alt="logo" />
             </div>
-            <Card>asd</Card>
+            <Card shadow>
+                <Grid gap={50} autoflow="column" autocolumns="max-content">
+                    <CalculatorInput />
+                    <Result />
+                </Grid>
+            </Card>
         </div>
     )
 }
