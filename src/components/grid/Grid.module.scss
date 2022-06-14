@@ -5,8 +5,10 @@
 }
 
 .column {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
+    @include custom-min-width($lg) {
+        grid-auto-flow: column;
+        grid-auto-columns: 1fr;
+    }
 }
 
 .row {
