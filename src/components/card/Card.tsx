@@ -6,18 +6,20 @@ import clsx from 'clsx'
 interface Props {
     children: ReactNode
     color?: 'white' | 'cyan'
-    shadow?: boolean
+    shadowed?: boolean
+    className?: string
 }
 
 export const Card: FC<Props> = ({
     children,
     color = 'white',
-    shadow = false,
+    shadowed = false,
+    className,
 }) => {
     return (
         <div
-            className={clsx(styles.wrapper, styles[color], {
-                [styles.shadow]: shadow,
+            className={clsx(styles.wrapper, styles[color], className, {
+                [styles.shadowed]: shadowed,
             })}
         >
             {children}

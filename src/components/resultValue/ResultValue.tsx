@@ -9,7 +9,7 @@ interface Props {
 
 export const ResultValue: FC<Props> = ({ name, value }) => {
     return (
-        <div className={styles.output}>
+        <div className={styles.wrapper}>
             <div className={styles.titleWrapper}>
                 <div className={styles.title}>{name}</div>
                 <div className={styles.description}>/ person</div>

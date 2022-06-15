@@ -17,16 +17,19 @@ export const CalculatorInput = () => {
                 <Label id="bill" label="Bill" />
                 <Input id="bill" icon={DollarIcon} />
             </Group>
-            <Grid gap={15} cols={3}>
-                {[...Array(5)].map((_, index) => (
-                    <Tip value={15} key={index} />
-                ))}
-                <input
-                    type="text"
-                    className={styles.custom}
-                    placeholder="Custom"
-                />
-            </Grid>
+            <Group>
+                <Label id="tip" label="Select tip %" />
+                <Grid gap={15} cols={3}>
+                    {[...Array(5)].map((_, index) => (
+                        <Tip value={15} key={index} />
+                    ))}
+                    <input
+                        type="text"
+                        className={styles.custom}
+                        placeholder="Custom"
+                    />
+                </Grid>
+            </Group>
             <Group mt={30}>
                 <Label id="person" label="Number of people" />
                 <Input id="person" icon={PersonIcon} />
