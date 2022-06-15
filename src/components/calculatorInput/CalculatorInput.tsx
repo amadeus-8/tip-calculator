@@ -19,7 +19,7 @@ export const CalculatorInput = () => {
             </Group>
             <Group>
                 <Label id="tip" label="Select tip %" />
-                <Grid gap={15} cols={3}>
+                <Grid gap={15} className={styles.grid}>
                     {[...Array(5)].map((_, index) => (
                         <Tip value={15} key={index} />
                     ))}

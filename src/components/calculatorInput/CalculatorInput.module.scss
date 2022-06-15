@@ -1,8 +1,20 @@
+@import 'src/styles/mixins';
 @import 'src/styles/colors';
 
 .wrapper {
     width: 100%;
-    padding: 0 35px 15px 15px;
+
+    @include custom-min-width($lg) {
+        padding: 0 35px 15px 15px;
+    }
+}
+
+.grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    @include custom-min-width($lg) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
 .custom {

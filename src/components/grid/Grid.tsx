@@ -10,6 +10,7 @@ interface Props {
     gap?: number
     autoflow?: 'initial' | 'column' | 'row'
     autocolumns?: 'min-content' | 'max-content'
+    className?: string
 }
 
 export const Grid: FC<Props> = ({
@@ -19,6 +20,7 @@ export const Grid: FC<Props> = ({
     gap = 24,
     autoflow = 'initial',
     autocolumns = '',
+    className,
 }) => {
     const gridTemplateRows = `repeat(${rows}, minmax(0, 1fr))`
     const gridTemplateColumns = `repeat(${cols}, minmax(0, 1fr))`
@@ -28,7 +30,8 @@ export const Grid: FC<Props> = ({
             className={clsx(
                 styles.wrapper,
                 styles[autoflow],
-                styles[autocolumns]
+                styles[autocolumns],
+                className
             )}
             style={{
                 gridGap: `${gap}px`,
