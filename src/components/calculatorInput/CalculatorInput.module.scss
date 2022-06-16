@@ -1,35 +1,9 @@
 @import 'src/styles/mixins';
-@import 'src/styles/colors';
 
 .wrapper {
     width: 100%;
 
     @include custom-min-width($lg) {
         padding: 0 35px 15px 15px;
-    }
-}
-
-.grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    @include custom-min-width($lg) {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
-
-.custom {
-    text-align: center;
-    font-weight: 700;
-    border-radius: 5px;
-    color: $very-dark-cyan;
-    outline: none;
-    padding: 5px 15px;
-    font-size: 18px;
-    font-family: 'Space Mono', monospace;
-    background: $very-light-grayish-cyan;
-    border: 2px solid $very-light-grayish-cyan;
-
-    &:focus {
-        border: 2px solid $strong-cyan;
     }
 }
