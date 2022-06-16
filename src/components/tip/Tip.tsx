@@ -1,8 +1,9 @@
 import React, { FC } from 'react'
+import { useSelector } from 'react-redux'
+import clsx from 'clsx'
 
 import styles from './Tip.module.scss'
-import clsx from 'clsx'
-import { useSelector } from 'react-redux'
+
 import { tipCalculatorSelector } from '../../redux/tipCalculatorSlice'
 
 interface Props {

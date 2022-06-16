@@ -1,5 +1,4 @@
 @import 'src/styles/mixins';
-@import 'src/styles/colors';
 
 .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -22,7 +22,7 @@ export const Result = () => {
     useEffect(() => {
         dispatch(calculateTipAmount())
         dispatch(calculateTotal())
-    }, [bill, numberOfPeople, tipPercent])
+    }, [bill, numberOfPeople, tipPercent, dispatch])
 
     return (
         <Card color="cyan" className={styles.wrapper}>
