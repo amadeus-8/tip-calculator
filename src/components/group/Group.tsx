@@ -1,4 +1,5 @@
 import React, { FC, ReactNode } from 'react'
+import clsx from 'clsx'
 
 import styles from './Group.module.scss'
 
@@ -12,7 +13,7 @@ interface Props {
 export const Group: FC<Props> = ({ children, className, mt, mb }) => {
     return (
         <div
-            className={className}
+            className={clsx(styles.wrapper, className)}
             style={{ marginTop: `${mt}px`, marginBottom: `${mb}px` }}
         >
             {children}

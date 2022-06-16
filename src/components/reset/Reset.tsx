@@ -1,8 +1,9 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import clsx from 'clsx'
 
 import styles from './Reset.module.scss'
-import { useDispatch, useSelector } from 'react-redux'
+
 import {
     resetValues,
     tipCalculatorSelector,

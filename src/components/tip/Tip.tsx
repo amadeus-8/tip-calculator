@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import React, { FC } from 'react'
 
 import styles from './Tip.module.scss'
 import clsx from 'clsx'

@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 import styles from './CalculatorInput.module.scss'
 
@@ -8,7 +9,6 @@ import { Group } from '../group/Group'
 import { Label } from '../label/Label'
 import { Input } from '../input/Input'
 import { TipPercents } from '../tipPercents/TipPercents'
-import { useSelector } from 'react-redux'
 import { tipCalculatorSelector } from '../../redux/tipCalculatorSlice'
 
 export const CalculatorInput = () => {

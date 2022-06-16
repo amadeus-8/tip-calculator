@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 
 import styles from './Result.module.scss'
 
@@ -6,7 +7,6 @@ import { Card } from '../card/Card'
 import { ResultValue } from '../resultValue/ResultValue'
 import { Reset } from '../reset/Reset'
 import { Group } from '../group/Group'
-import { useDispatch, useSelector } from 'react-redux'
 import {
     calculateTipAmount,
     calculateTotal,

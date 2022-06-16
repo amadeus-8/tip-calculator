@@ -1,11 +1,12 @@
 import React, { useCallback } from 'react'
+import { useDispatch } from 'react-redux'
 
 import styles from './TipPercents.module.scss'
+
 import { tipPercents } from '../../utils/tipHelper'
 import { Tip } from '../tip/Tip'
 import { Input } from '../input/Input'
 import { Grid } from '../grid/Grid'
-import { useDispatch } from 'react-redux'
 import { setTipPercent } from '../../redux/tipCalculatorSlice'
 
 export const TipPercents = () => {
