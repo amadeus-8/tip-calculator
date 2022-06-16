@@ -13,7 +13,7 @@ import {
 interface Props {
     id: string
     icon?: string
-    value?: number
+    value?: number | string
     placeholder?: string
     className?: string
 }
@@ -56,10 +56,11 @@ export const Input: FC<Props> = ({
             <input
                 id={id}
                 className={clsx(styles.input, className)}
-                type="text"
+                type="number"
                 value={value}
                 placeholder={placeholder}
                 onChange={handleChange}
+                min={id === 'person' ? 1 : 0}
             />
             {icon && <img className={styles.icon} src={icon} alt="icon" />}
         </div>

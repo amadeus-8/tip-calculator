@@ -37,6 +37,7 @@ const tipCalculatorSlice = createSlice({
         calculateTotal(state) {
             state.total = state.bill / state.numberOfPeople + state.tipAmount
         },
+        resetValues: () => initialState,
     },
 })
 
@@ -46,6 +47,7 @@ export const {
     setNumberOfPeople,
     calculateTipAmount,
     calculateTotal,
+    resetValues,
 } = tipCalculatorSlice.actions
 
 export const tipCalculatorSelector = (state: RootState): InitialState =>

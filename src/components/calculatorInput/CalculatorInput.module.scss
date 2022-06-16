@@ -7,3 +7,19 @@
         padding: 0 35px 15px 15px;
     }
 }
+
+.personTitleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error {
+    font-weight: 700;
+    color: indianred;
+    transition: 0.4s all;
+
+    &:focus {
+        border-color: indianred !important;
+    }
+}
